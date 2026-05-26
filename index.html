@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ตรอ. วุฒิตรัย | ตรวจสภาพรถ ต่อภาษี พ.ร.บ. ครบวงจร</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Outfit font for modern numbers/headings & Kanit for clear Thai typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#home" aria-label="ตรอ. พร้อมตรวจ">
+        <span class="brand-mark">ตรอ</span>
+        <span class="brand-text">วุฒิตรัย</span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="#services">บริการหลัก</a>
+        <a href="#contact">ติดต่อเรา</a>
+        <a href="#map">ที่ตั้งร้าน</a>
+      </nav>
+      <a class="nav-cta" href="tel:0812345678">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        โทร 081-234-5678
+      </a>
+    </header>
+
+    <main id="home">
+      <!-- Hero Section with Reveal Animation -->
+      <section class="hero reveal">
+        <div class="hero-content">
+          <!-- Dynamic Background Slider -->
+          <div class="hero-slider">
+            <div class="slide active" style="background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 30%, rgba(92, 24, 122, 0.08) 100%), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 30%, rgba(92, 24, 122, 0.08) 100%), url('https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 30%, rgba(92, 24, 122, 0.08) 100%), url('appropriate-magenta-9tsr9oh8tx.edgeone.app');"></div>
+          </div>
+
+          <!-- Hero Text Overlay -->
+          <div class="hero-text-wrap">
+            <p class="eyebrow">Vehicle Inspection Station</p>
+            <h1>
+              <span>ตรวจสภาพรถ</span>
+              <span>ต่อภาษี พ.ร.บ.</span>
+              <span>จบง่ายในที่เดียว</span>
+            </h1>
+            <p class="hero-copy">
+              ยินดีต้อนรับสู่ ตรอ. วุฒิตรัย เราให้บริการตรวจสภาพรถยนต์และรถจักรยานยนต์อย่างรวดเร็ว ได้มาตรฐาน ถูกต้องตามกฎหมาย พร้อมบริการรับฝากต่อภาษีประจำปี พ.ร.บ. และประกันภัยรถยนต์ทุกประเภท ครบถ้วน รวดเร็ว มั่นใจได้
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://line.me/ti/p/~exzerozyt" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                  <path d="m22 2-7 20-4-9-9-4Z"/>
+                  <path d="M22 2 11 13"/>
+                </svg>
+                ทักแชท LINE
+              </a>
+              <a class="button secondary" href="#map">ดูแผนที่ร้าน</a>
+            </div>
+          </div>
+
+          <!-- Slider Dots Navigation -->
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+
+        <!-- Live Status Panel -->
+        <aside class="status-panel reveal delay-1" aria-label="ข้อมูลสถานตรวจสภาพรถ" data-business-status>
+          <div class="status-head">
+            <span class="live-dot"></span>
+            <span data-status-text>กำลังตรวจสอบเวลาเปิดทำการ</span>
+          </div>
+          <dl>
+            <div>
+              <dt>เวลาให้บริการ</dt>
+              <dd>08:00 - 17:00 น.</dd>
+            </div>
+            <div>
+              <dt>รองรับประเภทรถ</dt>
+              <dd>รถยนต์ / รถจักรยานยนต์</dd>
+            </div>
+            <div>
+              <dt>จุดเด่นบริการ</dt>
+              <dd>ตรวจไว เอกสารครบ มีที่จอดรถสะดวก</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <!-- Trust Strip Section -->
+      <section class="trust-strip reveal delay-2">
+        <div>
+          <strong>15 min</strong>
+          <span>ตรวจเบื้องต้นเสร็จรวดเร็วทันใจ</span>
+        </div>
+        <div>
+          <strong>Full Service</strong>
+          <span>ครบทั้งตรวจสภาพ ภาษี และ พ.ร.บ.</span>
+        </div>
+        <div>
+          <strong>Google Maps</strong>
+          <span>เปิดระบบนำทางพาคุณมาหน้าร้านทันที</span>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section" id="services">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>
+            <span>บริการที่คุณได้รับ</span>
+            <span>ครบจบในที่เดียว</span>
+          </h2>
+        </div>
+        <div class="service-grid">
+          <!-- Card 1: Inspection -->
+          <article class="service-card reveal delay-1">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                <circle cx="7" cy="17" r="2"/>
+                <path d="M9 17h6"/>
+                <circle cx="17" cy="17" r="2"/>
+                <path d="m9 10 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>ตรวจสภาพรถ (ตรอ.)</h3>
+            <p>ตรวจวัดค่าไอเสีย ตรวจระบบเบรก และความปลอดภัยของรถยนต์และรถจักรยานยนต์ก่อนต่อภาษี พร้อมแนะแนวทางตรวจอย่างมีมาตรฐาน</p>
+          </article>
+
+          <!-- Card 2: Annual Tax (Highlight) -->
+          <article class="service-card highlight reveal delay-2">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+                <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+                <path d="M10.4 12.6a2 2 0 1 1 3 3L10 18H9v-1Z"/>
+                <path d="m11 15 2-2"/>
+                <path d="M8 8h1"/>
+              </svg>
+            </div>
+            <h3>รับฝากต่อภาษีประจำปี</h3>
+            <p>อำนวยความสะดวกฝากต่อภาษีประจำปีรวดเร็วทันใจ พร้อมแจ้งสรุปรายการค่าใช้จ่ายและเอกสารที่ต้องใช้ทั้งหมดอย่างละเอียดชัดเจน</p>
+          </article>
+
+          <!-- Card 3: Act & Insurance -->
+          <article class="service-card reveal delay-3">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6Z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>พ.ร.บ. และประกันภัย</h3>
+            <p>จำหน่าย พ.ร.บ. คุ้มครองผู้ประสบภัยจากรถทันที และรับทำประกันภัยรถยนต์ทุกชั้น ราคาพิเศษ คอยให้คำปรึกษาดูแลรวดเร็ว</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Map & Location Section -->
+      <section class="map-section" id="map">
+        <div class="map-card reveal">
+          <div class="map-info">
+            <p class="eyebrow">Location</p>
+            <h2>ที่ตั้ง ตรอ. วุฒิตรัย</h2>
+            
+            <div class="place-card">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                สถานที่ตั้งร้าน
+              </span>
+              <strong>57/12 ถนนพุทธมณฑลสาย 3 ซอย 28</strong>
+              <p>แขวงศาลาธรรมสพน์ เขตทวีวัฒนา กรุงเทพมหานคร 10170</p>
+            </div>
+
+            <div class="map-meta">
+              <div>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  เวลาให้บริการ
+                </span>
+                <strong>08:00 - 17:00 น.</strong>
+              </div>
+              <div>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;">
+                    <rect width="16" height="10" x="2" y="6" rx="2"/>
+                    <circle cx="6" cy="16" r="2"/>
+                    <circle cx="18" cy="16" r="2"/>
+                  </svg>
+                  เหมาะสำหรับ
+                </span>
+                <strong>รถยนต์ / มอเตอร์ไซค์</strong>
+              </div>
+            </div>
+
+            <div class="map-actions" id="contact">
+              <a class="button primary" href="https://www.google.com/maps?q=%E0%B8%95%E0%B8%A3%E0%B8%AD.+%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%B1%E0%B8%A2+(%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%8A%E0%B8%99)+57/12+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%A1%E0%B8%93%E0%B8%91%E0%B8%A5%E0%B8%AA%E0%B8%B2%E0%B8%A2+3+%E0%B8%8B%E0%B8%AD%E0%B8%A2+28+10170+%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B8%9E%E0%B8%99%E0%B9%8C+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10170&ftid=0x30e2914c6e7e6d45:0xfed2793ab9886b6c" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                  <line x1="9" x2="9" y1="3" y2="18"/>
+                  <line x1="15" x2="15" y1="6" y2="21"/>
+                </svg>
+                เปิด Google Maps นำทาง
+              </a>
+              <a class="button secondary" href="tel:0812345678">โทรสอบถามเพิ่มเติม</a>
+            </div>
+          </div>
+
+          <!-- Maps iframe with clean loading -->
+          <iframe
+            title="แผนที่ ตรอ. วุฒิตรัย"
+            src="https://www.google.com/maps?q=%E0%B8%95%E0%B8%A3%E0%B8%AD.%20%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%B1%E0%B8%A2%20%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%8A%E0%B8%99%2057%2F12%20%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%A1%E0%B8%93%E0%B8%91%E0%B8%A5%E0%B8%AA%E0%B8%B2%E0%B8%A2%203%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%2028%2010170&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sleek Dark Footer -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <strong>ตรอ. วุฒิตรัย</strong>
+        <span>| ศูนย์ตรวจสภาพรถและบริการภาษีครบวงจร</span>
+      </div>
+      <a href="#topbar">
+        กลับขึ้นด้านบน
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"/>
+        </svg>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
